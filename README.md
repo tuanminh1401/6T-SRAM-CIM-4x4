@@ -65,7 +65,7 @@ The transient simulation (`0 ns – 20 ns`) operates across three distinct phase
 
 ### 4.1. Analog MAC Output & Linearity (Sampled at $t = 15.0\text{ ns}$)
 
-| Column | Expected MAC | Final $V_{\text{BL\_INV}}$ (mV) | Voltage Drop $\Delta V$ (mV) | Step Size $\Delta V_{\text{step}}$ (mV) | DNL (LSB) |
+| Column | Expected MAC | Final $V_{\text{BL-INV}}$ (mV) | Voltage Drop $\Delta V$ (mV) | Step Size $\Delta V_{\text{step}}$ (mV) | DNL (LSB) |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **BL_INV0** | 1 | 867.66 | 132.34 | 132.34 | +0.31 |
 | **BL_INV1** | 2 | 760.97 | 239.03 | 106.69 | +0.06 |
@@ -73,7 +73,7 @@ The transient simulation (`0 ns – 20 ns`) operates across three distinct phase
 | **BL_INV3** | 4 | 597.34 | 402.66 | 75.10 | -0.25 |
 
 * **Average Step Size ($1\text{ LSB}$):** $100.67\text{ mV}$
-* **Peak Differential Non-Linearity ($|\text{DNL}|_{\max}$):** $0.31\text{ LSB}$ (due to channel-length modulation and $V_{DS}$ compression as $V_{\text{BL\_INV}}$ discharges).
+* **Peak Differential Non-Linearity ($|\text{DNL}|_{\max}$):** $0.31\text{ LSB}$ (due to channel-length modulation and $V_{DS}$ compression as $V_{\text{BL-INV}}$ discharges).
 
 ### 4.2. Energy Efficiency & Read Disturb Immunity
 
