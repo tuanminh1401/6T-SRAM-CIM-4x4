@@ -42,7 +42,7 @@ An analog Computing-in-Memory (CIM) macro based on a **4x4 6T SRAM array** desig
 * **Input Vector ($X$):** All-ones activation vector $[1, 1, 1, 1]^T$ applied simultaneously during the compute phase.
 
 ![Testbench Schematic](images/Screenshot%202026-11-22%20100920.png)
-*Figure 3: Complete Spectre testbench including pre-charge switches, $25\text{ fF}$ bitline capacitors, and PWL wordline drivers.*
+*Figure 3: Complete Spectre testbench including pre-charge switches, 25 fF bitline capacitors, and PWL wordline drivers.*
 
 ---
 
@@ -57,7 +57,7 @@ The transient simulation (`0 ns – 20 ns`) operates across three distinct phase
 *Figure 4: Transient waveforms illustrating sequential Write, Pre-charge, and parallel Compute phases.*
 
 ![Analog MAC Output Levels](images/Screenshot%202026-11-22%20101349.png)
-*Figure 5: Bitline output voltages (`BL_INV0`–`BL_INV3`) sampled at $t = 15.0\text{ ns}$ corresponding to MAC outputs `[1, 2, 3, 4]`.*
+*Figure 5: Bitline output voltages (`BL_INV0`–`BL_INV3`) sampled at t = 15.0 ns corresponding to MAC outputs `[1, 2, 3, 4]`.*
 
 ---
 
@@ -94,5 +94,5 @@ The transient simulation (`0 ns – 20 ns`) operates across three distinct phase
 ## 5. Future Optimization Directions
 
 1. **Linearity Enhancement ($\text{DNL} < 0.1\text{ LSB}$):** Transition from resistive bitline discharge to **charge-sharing capacitive coupling** or constant-current saturation discharge to eliminate step compression on larger arrays ($8\times 8$, $16\times 16$).
-2. **Decoupled Read Port (8T/10T SRAM):** Separate the compute discharge path from the storage nodes to eliminate read disturb completely, enabling full $1.0\text{ V}$ wordline activation and sub-$300\text{ ps}$ compute latency.
+2. **Decoupled Read Port (8T/10T SRAM):** Separate the compute discharge path from the storage nodes to eliminate read disturb completely, enabling full $1.0\text{ V}$ wordline activation and sub-300 ps compute latency.
 3. **Differential Signed MAC (XNOR):** Utilize both `BL` and `BL_INV` simultaneously for signed weights ($w \in \{-1, +1\}$) with differential sense amplification.
